@@ -2,9 +2,11 @@ import asyncio
 import bitstruct
 import struct
 import warnings
+#this stops a deprecated function warning in the UI
 warnings.simplefilter(action="ignore", category=FutureWarning)
 
 from bleak import BleakClient
+
 
 HR_MEAS = "00002A37-0000-1000-8000-00805F9B34FB"
 TM_DATA = "00002acd-0000-1000-8000-00805f9b34fb"
